@@ -13,11 +13,14 @@ html,body{
     background-color: #e2e2e4;
     width: 100%;
     height: 100vh;
+    z-index: 3;
+    
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     padding: 2rem 4rem;
+    z-index: 4;
 }
 .logo h2{
     font-size: 2rem; 
@@ -49,18 +52,4 @@ html,body{
     background-color: #b1e82d;
     cursor: pointer;
 }
-.hero-container{
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   position: relative;
-    
-}
-.right img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    right: 0px;
-    top: 0;
-}
+
