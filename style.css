@@ -51,5 +51,27 @@ html,body{
     font-size: 1.2rem;
     background-color: #b1e82d;
     cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
-
+.btns button::after{
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    border-radius: 70%;
+    transition: .2s;
+    z-index: -1;
+    color: white;
+   
+}
+.btns button:hover::after
+{
+    bottom: 0%;
+    border-radius: 100px;
+    
+}
