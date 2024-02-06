@@ -19,7 +19,7 @@ html,body{
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 2rem 4rem;
+    padding: 2rem 6rem;
     z-index: 4;
 }
 .logo h2{
@@ -54,6 +54,9 @@ html,body{
     overflow: hidden;
     position: relative;
     z-index: 1;
+    color: black;
+    transition: .2s;
+
 }
 .btns button::after{
     content: "";
@@ -62,16 +65,91 @@ html,body{
     left: 0%;
     width: 100%;
     height: 100%;
-    background-color: blue;
+    background-color: #4d26b3;
     border-radius: 70%;
-    transition: .2s;
+    transition: .3s;
     z-index: -1;
-    color: white;
+    
    
+}
+.btns button:hover{
+    color: white;
+    
 }
 .btns button:hover::after
 {
     bottom: 0%;
     border-radius: 100px;
     
+}
+.hero-container{
+    width: 100%;
+}
+.hero-container .left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+    margin: 5rem 5rem;
+}
+.left p{
+    font-size: 1.2rem;
+}
+.left h1{
+    font-size: 5rem ;
+    font-weight: 900;
+    letter-spacing:-3px;
+    line-height: 6rem;
+}
+.left h1 span{
+    color: #4d26b3;
+}
+.btn-container button{
+        padding: 1rem 2rem;
+        border-radius: 100px;
+        background-color: transparent;
+        border:1px solid black;
+        font-size: 1.2rem;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        color: black;
+        transition: .2s;
+    
+    
+}
+.btn-container button::after{
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color:#b1e82d;
+    border-radius: 70%;
+    transition: .3s;
+    z-index: -1;
+    
+   
+}
+
+.btn-container button:hover::after
+{
+    bottom: 0%;
+    border-radius: 100px;
+    
+}
+.btn-container .themeChange{
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    background-color: transparent;
+    border:1px solid rgb(255, 255, 255);
+    font-size: 1.2rem;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    transition: .2s;
 }
