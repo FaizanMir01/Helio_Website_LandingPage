@@ -153,3 +153,32 @@ html,body{
     color: rgb(255, 255, 255);
     transition: .2s;
 }
+.footer{
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+}
+.scroller{
+    display: inline-block;
+    background-color: #b1e82d;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+.content{
+    display: inline-block;
+    white-space: nowrap;
+    animation: infiniteScroll 10s timing-function delay infinite direction fill-mode;
+}
+.content h1{
+    display: inline-block;
+    white-space: nowrap;
+}
+@keyframes infiniteScroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+    
+}
