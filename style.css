@@ -156,29 +156,39 @@ html,body{
 .footer{
     width: 100%;
     position:absolute;
+    overflow: hidden;
     bottom: 0;
 }
-.scroller{
+.scroller {
+    width: 100%;
     display: inline-block;
+    padding:1rem;
     background-color: #b1e82d;
     white-space: nowrap;
     overflow-x: hidden;
 }
-.content{
+
+.content {
     display: inline-block;
     white-space: nowrap;
-    animation: infiniteScroll 10s timing-function delay infinite direction fill-mode;
+    overflow-x: hidden;
+    animation: infiniteScroll 7s linear infinite;
+    padding:0rem .5rem;
 }
-.content h1{
+
+.content h1 {
     display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin: 0rem 3px;
     white-space: nowrap;
 }
+
 @keyframes infiniteScroll {
-    0%{
+    0% {
         transform: translateX(0);
     }
-    100%{
-        transform: translateX(100%);
+    100% {
+        transform: translateX(-100%);
     }
-    
 }
