@@ -21,5 +21,5 @@ This project aims to replicate the design and functionality of the Helio landing
 
 
 ### Live Demo 
-<a href="https://faizanmir01.github.io/Helio_Website_LandingPage/">
+<a href="https://faizanmir01.github.io/Helio_Website_LandingPage/">Live Demo </a>
 
