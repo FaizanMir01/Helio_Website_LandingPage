@@ -1,5 +1,5 @@
 const themeChangeBtn = document.querySelector(".theme-change");
-const i = document.querySelector("i");
+const icon = document.querySelector("i");
 const main = document.querySelector(".page");
 const logo = document.querySelector(".logo h2");
 const heroHead = document.querySelector(".left h1");
@@ -12,8 +12,8 @@ themeChangeBtn.addEventListener("click",()=>{
     console.log("clicked")
     if(flag){
         main.style.backgroundColor = "#090516";
-        themeChangeBtn.classList.add("fa-sun");
         themeChangeBtn.style.borderColor="white";
+        icon.style.color="white";
         logo.style.color= "white";
         heroHead.style.color = "white";
         heroPara.style.color = "white";
@@ -26,6 +26,7 @@ themeChangeBtn.addEventListener("click",()=>{
         heroPara.style.color = "black";
         btnContainer.classList.remove("themeChange");
         btn2.classList.remove("themeChange");
+        icon.style.color="black";
     }
     flag =!flag;
     
