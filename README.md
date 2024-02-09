@@ -19,10 +19,4 @@ This project aims to replicate the design and functionality of the Helio landing
 - Interactive elements to mimic the original Helio landing page
 - Light and dark theme change button
 
-## Getting Started
-
-To view the cloned Helio landing page, simply clone or download this repository and open the `index.html` file in a web browser.
-
-```bash
-git clone https://github.com/your-username/helio-landing-page-clone.git
 
